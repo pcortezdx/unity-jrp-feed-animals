@@ -702,6 +702,54 @@ MonoBehaviour:
   speed: 10
   xRange: 12
   projectilePrefab: {fileID: 2853149125231395192, guid: 93c6c1e61c002e64f8f6e6fcd55930bd, type: 3}
+--- !u!1 &1218821897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218821899}
+  - component: {fileID: 1218821898}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1218821898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218821897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5022930529a1144845f8a265f56108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 219118371511617778, guid: 178e55812531b954789e0f7ff32478be, type: 3}
+  - {fileID: 4364229519856345870, guid: 2ba75a2cc26c2d742be5e1016945ea36, type: 3}
+  - {fileID: 5209783487859673281, guid: 765b4693797d17b479283f2a26bed505, type: 3}
+  - {fileID: 7330037366886866232, guid: 27eef024f97f4084c819ed537ed69616, type: 3}
+--- !u!4 &1218821899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218821897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.029314518, y: 1.9544847, z: -0.84660584}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1234981524
 PrefabInstance:
   m_ObjectHideFlags: 0
