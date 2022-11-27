@@ -9,15 +9,21 @@ public class DestroyOutOfBounds : MonoBehaviour
     float lowerBound = -15;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.z > topBound || transform.position.z < lowerBound)
+        // If an object pass the player view in the game destroy
+        if (transform.position.z > topBound)
         {
             Destroy(gameObject);
+        }
+        else if (transform.position.z < lowerBound)
+        {
+            Destroy(gameObject);
+            Debug.Log("Game over!");
         }
     }
 }
