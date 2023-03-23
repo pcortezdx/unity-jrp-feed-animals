@@ -4,21 +4,28 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private ScoreManager scoreManager;
+
+    private void Start()
     {
-        
+        //Storing the reference to our ScoreManager object to update
+        // points when feeding animals.
+        scoreManager = GameObject.Find("ScoreManager")
+            .GetComponent<ScoreManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+   
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        Debug.Log("Detect collision other tag: " + other.tag);
+        if (gameObject.CompareTag("Food") && other.CompareTag("Animal"))
+        {
+            //scoreManager.IncreaseFeedAnimal();
+            other.GetComponent<AnimalHunger>().FeedAnimal(1);
+            Destroy(gameObject);
+            //Destroy(other.gameObject);
+        }
+        
+        
     }
 }
